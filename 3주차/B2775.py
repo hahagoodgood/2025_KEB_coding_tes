@@ -21,6 +21,7 @@ for test_case in test_cases:
         for i in range(test_case[1]):upper_floor.append(sum(current_floor[:i+1]))
         current_floor = upper_floor.copy()
         upper_floor = []
+
     # output
     sys.stdout.write(str(current_floor[-1])+"\n")
     sys.stdout.flush()
